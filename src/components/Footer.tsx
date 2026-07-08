@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+
 import { Mail, ArrowUp } from "lucide-react";
 
 const GithubIcon = ({ size = 18 }: { size?: number }) => (
@@ -110,21 +110,15 @@ export default function Footer() {
       </div>
 
       {/* Floating Back to Top Button */}
-      <AnimatePresence>
-        {isVisible && (
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.3 }}
-            onClick={scrollToTop}
-            className="fixed bottom-6 right-6 z-40 bg-primary-accent hover:bg-blue-700 text-white p-3 rounded-full border border-white/5 shadow-lg shadow-primary-accent/20 cursor-pointer transition-all duration-300 hover:-translate-y-1"
-            aria-label="Back to top"
-          >
-            <ArrowUp size={18} />
-          </motion.button>
-        )}
-      </AnimatePresence>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 z-40 bg-primary-accent hover:bg-blue-700 text-white p-3 rounded-full border border-white/5 shadow-lg shadow-primary-accent/20 cursor-pointer transition-all duration-300 hover:-translate-y-1"
+          aria-label="Back to top"
+        >
+          <ArrowUp size={18} />
+        </button>
+      )}
     </footer>
   );
 }

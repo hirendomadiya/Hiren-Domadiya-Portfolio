@@ -1,9 +1,6 @@
 "use client";
-
 import React from "react";
-import { motion } from "framer-motion";
 import { Calendar, Building, Award } from "lucide-react";
-
 interface Job {
   company: string;
   role: string;
@@ -11,7 +8,6 @@ interface Job {
   techStack: string[];
   achievements: string[];
 }
-
 const EXPERIENCES: Job[] = [
   {
     company: "ScaleGrid Technologies",
@@ -38,39 +34,26 @@ const EXPERIENCES: Job[] = [
     ],
   },
 ];
-
 export default function Experience() {
   return (
     <section id="experience" className="py-24 bg-background relative overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="mb-16 text-center"
-        >
+        <div
+          className="mb-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
             Professional Experience
           </h2>
           <div className="w-16 h-1 bg-primary-accent mx-auto rounded-full" />
-        </motion.div>
-
+        </div>
         {/* Timeline Grid */}
         <div className="relative border-l border-zinc-800 ml-4 md:ml-32 md:pl-12 pl-6 space-y-12">
           {EXPERIENCES.map((job, idx) => (
-            <motion.div
+            <div
               key={idx}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: idx * 0.15 }}
-              className="relative"
-            >
+              className="relative">
               {/* Timeline dot */}
               <div className="absolute -left-[31px] md:-left-[55px] top-1 bg-background border-2 border-primary-accent w-4 h-4 rounded-full z-10 shadow-md shadow-primary-accent/40" />
-
               {/* Date Column (visible on md screens, placed absolute left) */}
               <div className="hidden md:block absolute -left-[160px] top-0.5 text-right w-[110px]">
                 <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wide flex items-center justify-end gap-1.5">
@@ -81,11 +64,9 @@ export default function Experience() {
                   to {job.duration.split(" - ")[1]}
                 </span>
               </div>
-
               {/* Experience Card */}
               <div className="glass-card p-6 md:p-8 rounded-[16px] border border-border-custom relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-blue-600/5 rounded-full blur-2xl pointer-events-none" />
-
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-3">
                   <div>
                     <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
@@ -102,7 +83,6 @@ export default function Experience() {
                     {job.duration}
                   </span>
                 </div>
-
                 {/* Achievements List */}
                 <ul className="space-y-3 mb-6">
                   {job.achievements.map((ach, aIdx) => (
@@ -112,7 +92,6 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
-
                 {/* Tech Stack */}
                 <div>
                   <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
@@ -123,15 +102,14 @@ export default function Experience() {
                     {job.techStack.map((tech, tIdx) => (
                       <span
                         key={tIdx}
-                        className="px-2.5 py-1 rounded-md text-xs font-semibold bg-zinc-950/80 border border-white/5 text-zinc-300 group-hover:border-zinc-700 transition-colors duration-300"
-                      >
+                        className="px-2.5 py-1 rounded-md text-xs font-semibold bg-zinc-950/80 border border-white/5 text-zinc-300 group-hover:border-zinc-700 transition-colors duration-300">
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
