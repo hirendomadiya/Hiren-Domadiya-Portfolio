@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
 
 export const metadata: Metadata = {
   title: "Hiren Domadiya | Software Engineer | Full Stack Developer Portfolio",
@@ -111,7 +104,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased scroll-smooth`}
+      className="h-full antialiased scroll-smooth"
     >
       <head>
         <script

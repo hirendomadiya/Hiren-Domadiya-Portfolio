@@ -154,6 +154,7 @@ export default function Hero() {
                 width={380}
                 height={507}
                 priority
+                sizes="(max-width: 640px) 300px, (max-width: 768px) 340px, 380px"
                 quality={85}
                 className="object-cover w-full h-full transition-transform duration-700 hover:scale-105"
               />
