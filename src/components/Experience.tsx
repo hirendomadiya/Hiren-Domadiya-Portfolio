@@ -73,11 +73,11 @@ export default function Experience() {
 
               {/* Date Column (visible on md screens, placed absolute left) */}
               <div className="hidden md:block absolute -left-[160px] top-0.5 text-right w-[110px]">
-                <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wide flex items-center justify-end gap-1.5">
-                  <Calendar size={12} className="text-zinc-600" />
+                <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wide flex items-center justify-end gap-1.5">
+                  <Calendar size={12} className="text-zinc-400" />
                   {job.duration.split(" - ")[0]}
                 </span>
-                <span className="text-xs text-zinc-600 block mt-0.5">
+                <span className="text-xs text-zinc-400 block mt-0.5">
                   to {job.duration.split(" - ")[1]}
                 </span>
               </div>
@@ -115,7 +115,7 @@ export default function Experience() {
 
                 {/* Tech Stack */}
                 <div>
-                  <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                  <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
                     <Award size={13} />
                     Technologies Used
                   </h4>

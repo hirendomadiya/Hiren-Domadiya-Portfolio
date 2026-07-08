@@ -85,10 +85,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-zinc-950 border-t border-border-custom py-12 relative">
+    <footer className="bg-zinc-950 border-t border-border-custom py-8 relative">
       <div className="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Copyright */}
-        <p className="text-xs text-zinc-500 font-medium">
+        <p className="text-xs text-zinc-400 font-medium">
           &copy; {new Date().getFullYear()} Hiren Domadiya. All rights reserved.
         </p>
 
@@ -100,7 +100,7 @@ export default function Footer() {
               href={social.href}
               target={social.label !== "Email" ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className="text-zinc-500 hover:text-white transition-colors duration-200 p-2 bg-zinc-900 border border-white/5 rounded-lg"
+              className="text-zinc-400 hover:text-white transition-colors duration-200 p-2 bg-zinc-900 border border-white/5 rounded-lg"
               aria-label={social.label}
             >
               {social.icon}

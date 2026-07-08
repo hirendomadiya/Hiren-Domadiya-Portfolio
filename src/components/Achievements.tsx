@@ -114,7 +114,7 @@ export default function Achievements() {
                 </h3>
               </div>
 
-              <p className="text-[11px] text-zinc-500 leading-normal mt-2">
+              <p className="text-[11px] text-zinc-400 leading-normal mt-2">
                 {stat.description}
               </p>
             </motion.div>

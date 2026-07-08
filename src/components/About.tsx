@@ -103,7 +103,7 @@ export default function About() {
                       <div className="p-2.5 bg-zinc-900/80 rounded-xl border border-white/5">
                         {card.icon}
                       </div>
-                      <span className="text-xs uppercase tracking-wider text-zinc-500 font-semibold">
+                      <span className="text-xs uppercase tracking-wider text-zinc-400 font-semibold">
                         {card.label}
                       </span>
                     </div>
@@ -112,7 +112,7 @@ export default function About() {
                       <p className={`font-semibold text-white tracking-wide ${card.label === "Email" ? "text-sm break-all" : "text-base"}`}>
                         {card.value}
                       </p>
-                      <p className="text-xs text-zinc-500 mt-0.5 group-hover:text-secondary-accent transition-colors duration-250">
+                      <p className="text-xs text-zinc-400 mt-0.5 group-hover:text-secondary-accent transition-colors duration-250">
                         {card.subText}
                       </p>
                     </div>

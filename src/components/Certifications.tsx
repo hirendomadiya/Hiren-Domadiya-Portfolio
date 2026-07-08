@@ -104,7 +104,7 @@ export default function Certifications() {
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-zinc-500 hover:text-white transition-colors mt-0.5"
+                    className="text-zinc-400 hover:text-white transition-colors mt-0.5"
                     aria-label={`Verify credential for ${cert.name}`}
                   >
                     <ExternalLink size={14} />
@@ -113,7 +113,7 @@ export default function Certifications() {
                 <p className="text-xs font-semibold text-zinc-400 mt-1">
                   {cert.issuer}
                 </p>
-                <div className="flex items-center gap-1.5 text-[11px] text-zinc-500 mt-3 font-semibold uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 text-[11px] text-zinc-400 mt-3 font-semibold uppercase tracking-wider">
                   <Award size={12} />
                   Issued {cert.date}
                 </div>

@@ -159,7 +159,7 @@ export default function Projects() {
 
                 {/* Key Metrics / Highlights */}
                 <div className="border-t border-border-custom pt-5 mb-6">
-                  <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-3">
+                  <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-3">
                     Project Highlights
                   </h4>
                   <ul className="space-y-2">

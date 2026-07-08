@@ -80,7 +80,7 @@ export default function Education() {
                 </div>
 
                 <p className="text-sm text-text-secondary leading-relaxed flex items-start gap-2.5">
-                  <BookOpen size={16} className="text-zinc-500 mt-1 min-w-[16px]" />
+                  <BookOpen size={16} className="text-zinc-400 mt-1 min-w-[16px]" />
                   {item.description}
                 </p>
               </div>

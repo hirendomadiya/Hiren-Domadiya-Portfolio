@@ -116,7 +116,7 @@ export default function Hero() {
 
           {/* Professional Badges */}
           <motion.div variants={itemVariants} className="w-full">
-            <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-3">
+            <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-3">
               Professional Focus
             </p>
             <div className="flex flex-wrap gap-2.5">
@@ -151,11 +151,11 @@ export default function Hero() {
               <Image
                 src="/hiren-portrait.jpg"
                 alt="Hiren Domadiya - Software Engineer"
-                fill
+                width={380}
+                height={507}
                 priority
-                sizes="(max-width: 768px) 600px, 760px"
-                quality={95}
-                className="object-cover transition-transform duration-700 hover:scale-105"
+                quality={85}
+                className="object-cover w-full h-full transition-transform duration-700 hover:scale-105"
               />
             </div>
 

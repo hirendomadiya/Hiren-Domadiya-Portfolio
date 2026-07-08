@@ -173,7 +173,7 @@ export default function Contact() {
                     {link.icon}
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[10px] uppercase font-bold text-zinc-500 tracking-wider block">
+                    <span className="text-[10px] uppercase font-bold text-zinc-400 tracking-wider block">
                       {link.label}
                     </span>
                     <span className="text-xs font-semibold text-zinc-300 group-hover:text-white transition-colors duration-250 truncate block mt-0.5">
