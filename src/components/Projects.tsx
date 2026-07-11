@@ -29,7 +29,7 @@ interface Project {
 }
 const PROJECTS: Project[] = [
   {
-    title: "SaaS Analytics Engine",
+    title: "E-commerce",
     description: "A real-time metrics collection and analytics engine designed for high-traffic websites. Features dynamic data aggregation, visual charts, and low-latency database queries.",
     image: "/project-analytics.png",
     techStack: ["Next.js", "React", "Django", "PostgreSQL", "Tailwind CSS"],
@@ -58,7 +58,7 @@ const PROJECTS: Project[] = [
   }
 ];
 export default function Projects() {
-      return (
+  return (
     <section id="projects" className="py-24 bg-background relative overflow-hidden">
       {/* Glow backdrop */}
       <div className="bg-glow-secondary bottom-[20%] left-[5%] w-[400px] h-[400px]" />
