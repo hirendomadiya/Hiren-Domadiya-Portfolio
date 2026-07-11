@@ -32,14 +32,14 @@ const PROJECTS: Project[] = [
     title: "E-commerce",
     description: "A real-time metrics collection and analytics engine designed for high-traffic websites. Features dynamic data aggregation, visual charts, and low-latency database queries.",
     image: "/project-analytics.png",
-    techStack: ["Next.js", "React", "Django", "PostgreSQL", "Tailwind CSS"],
+    techStack: ["Next.js", "React", "Node js", "PostgreSQL", "Tailwind CSS"],
     highlights: [
       "98% Lighthouse Performance Score",
       "Aggregates 10M+ events daily",
       "<50ms query response times via PostgreSQL optimization"
     ],
-    githubUrl: "https://github.com/hirendomadiya/analytics-engine",
-    liveUrl: "https://analytics.hirendomadiya.com",
+    githubUrl: "https://github.com/hirendomadiya/e-commerce.git",
+    liveUrl: "nova-3d-jg.vercel.app",
     metricIcon: <Activity size={14} className="text-secondary-accent" />
   },
   {
