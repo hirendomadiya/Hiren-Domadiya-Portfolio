@@ -11,14 +11,14 @@ const EDUCATION_ITEMS: EducationItem[] = [
   {
     degree: "Bachelor of Engineering in Computer Engineering",
     institution: "Gujarat Technological University",
-    duration: "2018 - 2022",
+    duration: "2014 - 2027",
     description: "Built a solid foundation in core computer science, database management systems, data structures, object-oriented programming, and software engineering. Participated in local hackathons and completed a full-stack e-commerce project as a senior capstone."
   },
   {
-    degree: "Higher Secondary Certificate (HSC) - Science",
-    institution: "Gujarat Secondary Education Board",
-    duration: "2016 - 2018",
-    description: "Completed coursework focused on Physics, Chemistry, and Advanced Mathematics, along with introductory computer programming in C++."
+    degree: "Diploma of Engineering in Computer Engineering",
+    institution: "Gujarat Technological University",
+    duration: "2021 - 2024",
+    description: "Completed coursework focused on introductory computer programming in languages."
   }
 ];
 export default function Education() {

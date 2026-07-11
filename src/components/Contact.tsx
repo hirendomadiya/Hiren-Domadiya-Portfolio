@@ -83,14 +83,14 @@ export default function Contact() {
     {
       icon: <Mail size={16} />,
       label: "Email",
-      value: "hirendomadiya@gmail.com",
-      href: "mailto:hirendomadiya@gmail.com",
+      value: "hirendomadiya834@gmail.com",
+      href: "mailto:hirendomadiya834@gmail.com",
     },
     {
       icon: <LinkedinIcon size={16} />,
       label: "LinkedIn",
       value: "linkedin.com/in/hirendomadiya",
-      href: "https://linkedin.com/in/hirendomadiya",
+      href: "linkedin.com/in/hirendomadiya",
     },
     {
       icon: <GithubIcon size={16} />,
@@ -158,122 +158,119 @@ export default function Contact() {
           {/* Right Column: Form */}
           <div
             className="lg:col-span-7 glass-card p-6 md:p-8 rounded-[16px] border border-border-custom relative">
-              {status === "success" ? (
-                <div
-                  className="flex flex-col items-center justify-center text-center py-12">
-                  <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-full text-success-accent mb-4">
-                    <CheckCircle2 size={40} />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Message Sent!</h3>
-                  <p className="text-sm text-text-secondary max-w-sm">
-                    Thank you for reaching out. Your message has been received successfully, and I will get back to you shortly.
-                  </p>
-                  <button
-                    onClick={() => setStatus("idle")}
-                    className="mt-6 text-xs font-bold text-secondary-accent hover:text-white uppercase tracking-wider transition-colors">
-                    Send another message
-                  </button>
+            {status === "success" ? (
+              <div
+                className="flex flex-col items-center justify-center text-center py-12">
+                <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-full text-success-accent mb-4">
+                  <CheckCircle2 size={40} />
                 </div>
-              ) : (
-                <form
-                  key="form"
-                  onSubmit={handleSubmit}
-                  noValidate
-                  className="space-y-5">
-                  {/* Name Field */}
-                  <div className="flex flex-col">
-                    <label htmlFor="name" className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className={`px-4 py-3 bg-zinc-900 border ${
-                        errors.name ? "border-red-500/50 focus:border-red-500" : "border-white/5 focus:border-secondary-accent/50"
+                <h3 className="text-xl font-bold text-white mb-2">Message Sent!</h3>
+                <p className="text-sm text-text-secondary max-w-sm">
+                  Thank you for reaching out. Your message has been received successfully, and I will get back to you shortly.
+                </p>
+                <button
+                  onClick={() => setStatus("idle")}
+                  className="mt-6 text-xs font-bold text-secondary-accent hover:text-white uppercase tracking-wider transition-colors">
+                  Send another message
+                </button>
+              </div>
+            ) : (
+              <form
+                key="form"
+                onSubmit={handleSubmit}
+                noValidate
+                className="space-y-5">
+                {/* Name Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="name" className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className={`px-4 py-3 bg-zinc-900 border ${errors.name ? "border-red-500/50 focus:border-red-500" : "border-white/5 focus:border-secondary-accent/50"
                       } text-sm text-white rounded-lg focus:outline-none transition-colors duration-250`}
-                      placeholder="John Doe"
-                    />
-                    {errors.name && (
-                      <span className="text-xs text-red-500 mt-1.5 flex items-center gap-1.5 font-medium">
-                        <AlertCircle size={12} />
-                        {errors.name}
-                      </span>
-                    )}
-                  </div>
-                  {/* Email Field */}
-                  <div className="flex flex-col">
-                    <label htmlFor="email" className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className={`px-4 py-3 bg-zinc-900 border ${
-                        errors.email ? "border-red-500/50 focus:border-red-500" : "border-white/5 focus:border-secondary-accent/50"
-                      } text-sm text-white rounded-lg focus:outline-none transition-colors duration-250`}
-                      placeholder="john@example.com"
-                    />
-                    {errors.email && (
-                      <span className="text-xs text-red-500 mt-1.5 flex items-center gap-1.5 font-medium">
-                        <AlertCircle size={12} />
-                        {errors.email}
-                      </span>
-                    )}
-                  </div>
-                  {/* Message Field */}
-                  <div className="flex flex-col">
-                    <label htmlFor="message" className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
-                      Your Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className={`px-4 py-3 bg-zinc-900 border ${
-                        errors.message ? "border-red-500/50 focus:border-red-500" : "border-white/5 focus:border-secondary-accent/50"
-                      } text-sm text-white rounded-lg focus:outline-none transition-colors duration-250 resize-none`}
-                      placeholder="Write your message here..."
-                    />
-                    {errors.message && (
-                      <span className="text-xs text-red-500 mt-1.5 flex items-center gap-1.5 font-medium">
-                        <AlertCircle size={12} />
-                        {errors.message}
-                      </span>
-                    )}
-                  </div>
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    disabled={status === "loading"}
-                    className="w-full flex items-center justify-center gap-2 bg-primary-accent hover:bg-blue-700 disabled:bg-blue-600/50 text-white font-semibold py-3.5 rounded-lg border border-white/5 transition-all duration-300 hover:shadow-lg hover:shadow-primary-accent/20 cursor-pointer disabled:cursor-not-allowed text-sm mt-2">
-                    {status === "loading" ? (
-                      <>
-                        <Loader2 size={16} className="animate-spin" />
-                        Sending Message...
-                      </>
-                    ) : (
-                      <>
-                        <Send size={16} />
-                        Send Message
-                      </>
-                    )}
-                  </button>
-                  {status === "error" && (
-                    <div className="p-3.5 bg-red-500/10 border border-red-500/20 text-red-500 rounded-lg text-xs flex items-center gap-2 font-medium">
-                      <AlertCircle size={14} />
-                      {errors.submit || "Something went wrong. Please try again."}
-                    </div>
+                    placeholder="John Doe"
+                  />
+                  {errors.name && (
+                    <span className="text-xs text-red-500 mt-1.5 flex items-center gap-1.5 font-medium">
+                      <AlertCircle size={12} />
+                      {errors.name}
+                    </span>
                   )}
-                </form>
-              )}
+                </div>
+                {/* Email Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="email" className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className={`px-4 py-3 bg-zinc-900 border ${errors.email ? "border-red-500/50 focus:border-red-500" : "border-white/5 focus:border-secondary-accent/50"
+                      } text-sm text-white rounded-lg focus:outline-none transition-colors duration-250`}
+                    placeholder="john@example.com"
+                  />
+                  {errors.email && (
+                    <span className="text-xs text-red-500 mt-1.5 flex items-center gap-1.5 font-medium">
+                      <AlertCircle size={12} />
+                      {errors.email}
+                    </span>
+                  )}
+                </div>
+                {/* Message Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="message" className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
+                    Your Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className={`px-4 py-3 bg-zinc-900 border ${errors.message ? "border-red-500/50 focus:border-red-500" : "border-white/5 focus:border-secondary-accent/50"
+                      } text-sm text-white rounded-lg focus:outline-none transition-colors duration-250 resize-none`}
+                    placeholder="Write your message here..."
+                  />
+                  {errors.message && (
+                    <span className="text-xs text-red-500 mt-1.5 flex items-center gap-1.5 font-medium">
+                      <AlertCircle size={12} />
+                      {errors.message}
+                    </span>
+                  )}
+                </div>
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  disabled={status === "loading"}
+                  className="w-full flex items-center justify-center gap-2 bg-primary-accent hover:bg-blue-700 disabled:bg-blue-600/50 text-white font-semibold py-3.5 rounded-lg border border-white/5 transition-all duration-300 hover:shadow-lg hover:shadow-primary-accent/20 cursor-pointer disabled:cursor-not-allowed text-sm mt-2">
+                  {status === "loading" ? (
+                    <>
+                      <Loader2 size={16} className="animate-spin" />
+                      Sending Message...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={16} />
+                      Send Message
+                    </>
+                  )}
+                </button>
+                {status === "error" && (
+                  <div className="p-3.5 bg-red-500/10 border border-red-500/20 text-red-500 rounded-lg text-xs flex items-center gap-2 font-medium">
+                    <AlertCircle size={14} />
+                    {errors.submit || "Something went wrong. Please try again."}
+                  </div>
+                )}
+              </form>
+            )}
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function About() {
     {
       icon: <Briefcase className="text-secondary-accent" size={22} />,
       label: "Experience",
-      value: "3+ Years",
+      value: "3+ internships",
       subText: "Web & Software Dev",
     },
     {

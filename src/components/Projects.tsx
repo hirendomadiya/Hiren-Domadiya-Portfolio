@@ -43,16 +43,16 @@ const PROJECTS: Project[] = [
     metricIcon: <Activity size={14} className="text-secondary-accent" />
   },
   {
-    title: "High-Performance API Gateway",
-    description: "A lightweight API gateway built for routing, rate limiting, and authenticating incoming microservice traffic. Designed for high scalability and secure token validation.",
+    title: "Hotel Management System",
+    description: "A lightweight API gatewnd secure token validation.",
     image: "/project-api.png",
-    techStack: ["Go", "PostgreSQL", "Git"],
+    techStack: ["python", "js", "Talwin"],
     highlights: [
       "Handles 15,000+ requests per second",
       "Dynamic rate limiting algorithm",
       "Token authentication in under 5ms"
     ],
-    githubUrl: "https://github.com/hirendomadiya/api-gateway",
+    githubUrl: "https://github.com/hirendomadiya/hotel_management.git",
     liveUrl: "https://api.hirendomadiya.com",
     metricIcon: <Cpu size={14} className="text-secondary-accent" />
   }

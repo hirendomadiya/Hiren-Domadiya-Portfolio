@@ -9,32 +9,32 @@ interface Certification {
 }
 const CERTIFICATIONS: Certification[] = [
   {
-    name: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services (AWS)",
-    date: "Dec 2024",
-    link: "https://aws.amazon.com/verification",
+    name: "Tata - GenAI Powered Data Analytics",
+    issuer: "Tata",
+    date: "July 2026",
+    link: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_6a4e564a3b58112d0531759e_1783519829451_completion_certificate.pdf",
   },
   {
-    name: "Meta Front-End Developer Professional",
-    issuer: "Meta (via Coursera)",
-    date: "Aug 2023",
-    link: "https://coursera.org/verify",
+    name: "Deloitte - Data Analytics",
+    issuer: "Deloitte",
+    date: "July 2026",
+    link: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6a4e564a3b58112d0531759e_1783520420794_completion_certificate.pdf",
   },
   {
-    name: "MongoDB Certified Developer Associate",
-    issuer: "MongoDB",
-    date: "Mar 2023",
-    link: "https://learn.mongodb.com",
+    name: "python",
+    issuer: "infolabs",
+    date: "July 2026",
+    link: ""
   },
   {
-    name: "PostgreSQL Advanced Developer Certification",
-    issuer: "EnterpriseDB",
-    date: "Nov 2022",
-    link: "https://enterprisedb.com",
+    name: "Python",
+    issuer: "Sparks to ideas",
+    date: "aug 2023",
+    link: ""
   },
 ];
 export default function Certifications() {
-      return (
+  return (
     <section id="certifications" className="py-24 bg-background relative overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 relative z-10">
         {/* Section Header */}

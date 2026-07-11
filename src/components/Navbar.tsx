@@ -6,7 +6,6 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const NAV_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
@@ -57,11 +56,10 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       <div
-        className={`w-full transition-all duration-300 ${
-          isScrolled
+        className={`w-full transition-all duration-300 ${isScrolled
             ? "glass-nav py-4 shadow-lg shadow-black/20"
             : "bg-transparent py-6 border-b border-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
           {/* Logo / Name */}
@@ -82,11 +80,10 @@ export default function Navbar() {
                   <a
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className={`text-sm font-medium tracking-wide transition-colors duration-300 relative py-1 ${
-                      activeSection === item.href.substring(1)
+                    className={`text-sm font-medium tracking-wide transition-colors duration-300 relative py-1 ${activeSection === item.href.substring(1)
                         ? "text-secondary-accent font-semibold"
                         : "text-text-secondary hover:text-white"
-                    }`}
+                      }`}
                   >
                     {item.label}
                     {activeSection === item.href.substring(1) && (
@@ -121,9 +118,8 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       <div
-        className={`lg:hidden w-full bg-zinc-950/95 border-b border-border-custom backdrop-blur-lg overflow-hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen ? "max-h-[380px] opacity-100 py-6" : "max-h-0 opacity-0 pointer-events-none"
-        }`}
+        className={`lg:hidden w-full bg-zinc-950/95 border-b border-border-custom backdrop-blur-lg overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "max-h-[380px] opacity-100 py-6" : "max-h-0 opacity-0 pointer-events-none"
+          }`}
       >
         <nav className="max-w-[1280px] mx-auto px-6 flex flex-col gap-6">
           <ul className="flex flex-col gap-4">
@@ -132,11 +128,10 @@ export default function Navbar() {
                 <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className={`text-base font-medium block py-2 border-b border-white/5 transition-colors ${
-                    activeSection === item.href.substring(1)
+                  className={`text-base font-medium block py-2 border-b border-white/5 transition-colors ${activeSection === item.href.substring(1)
                       ? "text-secondary-accent"
                       : "text-text-secondary hover:text-white"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </a>
